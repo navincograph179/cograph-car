@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    margin: auto;
+    max-width: 120rem;
+    padding: 12rem 5rem;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 12rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.12rem;
+    cursor: pointer;
+}
+.logo .logo-img {
+    width: 4.5rem;
+}
+.logo .logo-name {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.logo .logo-name span {
+    color: #fe5b3e;
+}
+
+nav .nav-links {
+    display: flex;
+}
+.nav-links li {
+    display: block;
+    list-style: none;
+    margin-left: 2rem;
+}
+.nav-links li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+}
+
+.btn {
+    background-color: transparent;
+    padding: 0.95rem 1.5rem;
+    color: #fc8023;
+    font-size: 1.5rem;
+    border: 1px solid #fc8023;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+.active {
+    background-color:  #fe5b3e;
+    padding: 0.95rem 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+nav .account {
+    display: flex;
+    gap: 1.12rem;
+}
+
+
+
+.home-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1.2rem;
+   max-width: 120rem;
+  }
+
+.home-container .text-contents {
+    max-width: 45rem;
+}
+.text-contents .main-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.text-contents .main-details {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Noto Sans Jp',serif;
+    margin-top: 2rem;
+}
+.app-store {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.app-store img {
+    max-width: 12.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.image-contents {
+    max-width: 67rem;
+    padding: 7.5rem 0;
+    position: relative;
+}
+.image-contents::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to bottom, #fe5c3c, #fc8023);
+    z-index: -1;;
+    border-radius: 1rem 1rem 0.5rem 0.5rem;
+    z-index: -1;
+  }
+.image-contents img {
+    width: 100%;
+}
+
+.rent {
+    text-align: center;
+    padding: 6rem 0;
+}
+.rent .rent-title {
+    font-size: 1.8rem;
+}
+.rent .rent-subtitle {
+    font-size: 4.1rem;
+}
+
+.rent .card-collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.card-collection .rent-card {
+    max-width: 35rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem 3.5rem;
+}
+
+.rent-card span {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 10px 17px;
+    font-size: 1.75rem;
+    color: #fe5b3e;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: 4px solid #ffffff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .rent-card:hover span {
+    padding: 14px 21px;
+    background: linear-gradient(to bottom, #fe5c3c, #fc8023);
+    color: #ffffff;
+    border: none;
+  }
+  .rent-card h3 {
+    font-size: 2rem;
+  }
+
+  .rent-card p {
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+    font-weight: 500;
+    font-family: 'Nato Sans Jp', serif;
+  }
+
+  /* =================== service section ================= */
+
+  .service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+  }
+  .service-container .service-image {
+    max-width: 75rem;
+  }
+  .service-image img {
+    width: 100%;
+  }
+
+  .service-container .service-contents {
+    max-width: 45rem;
+  }
+  .service-contents .service-subtitle {
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .service-contents .service-title {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+  }
+  .service-list li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.8rem;
+    margin: 1.4rem 0;
+  }
+  .service-list li span {
+    padding: 1.2rem 1.5rem;
+    font-size: 2.5rem;
+    color: #fe5b3e;
+    background-color: #f2f2f2;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem
+}
+
+.service-list li h4 {
+    font-size: 2rem;
+}
+
+.service-list li p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-top: 0.6rem;
+}
+
+/* =================== Ride section ================= */
+
+.ride {
+    text-align: center;
+}
+
+.ride-subtitle {
+    font-size: 1.5rem;
+}
+.ride-title {
+    font-size: 3.5rem;
+}
+.ride-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ride-image {
+    max-width: 30rem;
+    margin-inline: auto;
+    margin-top: 4.4rem;
+}
+
+.ride-contents .right-card, .ride-contents .left-card {
+    display: flex;
+    flex-direction: column;
+}
+.left-card .ride-card, .right-card  .ride-card {
+    max-width: 24rem;
+    margin: 1.5rem 0;
+}
+
+.ride-card span {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 10px 13px;
+    font-size: 1.5rem;
+    color: #fc8023;
+    background-color: #f2f2f2;
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ride-card h4 {
+    font-size: 1.5rem;
+    margin: 1.2rem;
+}
+  
+  .left-card .ride-card:nth-child(1) {
+    top: 5rem;
+    right: 1rem;
+    text-align: right;
+  }
+  
+  .left-card .ride-card:nth-child(2) {
+    top: 5rem;
+    left: 1rem;
+    text-align: left;
+  }
+  
+  .left-card .ride-card:nth-child(3) {
+    top: 5rem;
+    right: 1rem;
+    text-align: right;
+  }
+
+  .right-card .ride-card:nth-child(1) {
+    top: 5rem;
+    right: 1rem;
+    text-align: left;
+  }
+  
+  .right-card .ride-card:nth-child(2) {
+    top: 5rem;
+    left: 1rem;
+    text-align: right;
+  }
+  
+  .right-card .ride-card:nth-child(3) {
+    top: 5rem;
+    right: 1rem;
+    text-align: left;
+  }
